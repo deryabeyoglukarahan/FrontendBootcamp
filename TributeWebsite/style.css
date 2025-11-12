@@ -1,0 +1,113 @@
+/* GENEL SAYFA AYARLARI */
+body {
+    font-family: "Georgia", serif;
+    background-color: #f7f6f2;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* BAŞLIK VE MENÜ */
+header {
+    background-color: #222;
+    color: #f7f6f2;
+    text-align: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f7f6f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c59d5f;
+}
+
+/* GİRİŞ BÖLÜMÜ */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ede9e3;
+}
+
+.intro img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* BİYOGRAFİ BÖLÜMÜ */
+.biography {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biography h2 {
+    color: #b57f35;
+    text-align: center;
+}
+
+/* ESERLER BÖLÜMÜ */
+.works {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.works h2 {
+    color: #b57f35;
+    text-align: center;
+}
+
+.works ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.works li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: #f7f6f2;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
