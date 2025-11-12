@@ -1,0 +1,109 @@
+/* GENEL SAYFA YAPISI */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ÜST MENÜ (NAVİGASYON) */
+header {
+    background-color: #005b96;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* ANA İÇERİK */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BAŞLIKLAR */
+h1,
+h2,
+h3 {
+    color: #005b96;
+}
+
+/* GÖRSELLER */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* LİSTELER */
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul li,
+ol li {
+    margin-bottom: 8px;
+}
+
+/* FORM TASARIMI */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #005b96;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #003f6b;
+}
+
+/* ALT KISIM (OPSİYONEL) */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #005b96;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid #003f6b;
+}
