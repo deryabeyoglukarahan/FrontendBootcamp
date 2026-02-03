@@ -1,0 +1,211 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('/images/hero-man.jpg');
+    background-position:center;
+    height: 97vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/*navbar düzenlemeleri*/
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 390px 0 250px; 
+    position: fixed; 
+    z-index: 200;
+}
+.navbar-scroll{
+    background-color: #355592;
+}
+/*navbar içindeki unsorted list düzenlemeleri*/
+.navbar ul{
+    display: flex;
+    gap: 26px;
+}
+/*her bir a tagına müdahale*/
+.navbar ul a{
+    color: var(--text-color-1);
+    font-size: 15px;
+    font-weight: 800;
+}
+/*navbar içindeki son a tagına özel müdahale*/
+.navbar ul li:last-child a{
+    background-color: var(--background-color-3);
+    align-items: first baseline;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+/*logo içindeki img düzenlemeleri*/
+.logo img{
+    width: 75%;  
+    padding: 0;
+    margin: 0;
+}
+/*Home divinin düzenlenmesi*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding-left: 250px;
+    position: relative;
+    width: 80%;
+    margin-top: 150px;
+
+}
+/*Home içerisindeki button ile ilgili düzenlemeler*/
+.home-button{
+    display:inline-block;
+    background-color: #355494;
+    font-weight: 700;
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 6px 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.home-top-h1{
+    width: 60%;
+}
+/*Home içerisindeki başlık ile ilgili düzenlemeler*/
+.home-top-h1 h1{
+    color: var(--text-color-1);
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+/*Home içerisindeki p ile ilgili düzenlemeler*/
+.home p{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color-1);
+    font-weight: 700;
+    padding: 5px 28px 5px 16px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+/*Butonların oldugu div ile ilgili düzenlemeler*/
+.home-buttons{
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*sign up butonu ile ilgili düzenlemeler*/
+.home-buttons .sign-up{
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 4px 18px;
+    
+}
+/*details butonu ile ilgili düzenlemeler*/
+.home-buttons .details{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 4px 18px;
+    border: 2px solid var(--text-color-1);
+}
+@media (max-width: 576px) {
+    .header {
+        background-size:cover;
+        background-position:center;
+        }   
+        /*576 px altına indiği an hamburger iconu gözükür*/
+        .menu-hmbrgr {
+            display: block;
+            color: #ffffff;
+        }
+        /*navarı column olacak şekilde ayarlıyorum*/
+        .navbar ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+        /*show classı sayesinde icona tıklandığında navar gözükücek*/
+        .navbar ul.show {
+            display: flex;
+        }
+        .navbar ul li {
+            padding: 10px 0;
+        }
+        /*normal menüde listenin son elemanının özel stili vardı onu değiştiriyorum*/
+        .navbar ul li:last-child a{
+            color: var(--text-color-1);
+            font-size: 15px;
+            font-weight: 800;
+            background-color: transparent;
+            align-items: first baseline;
+            text-transform:none;
+            padding: 0;
+            border-radius: 0;
+        }
+        /*logoyu küçültüyorum*/
+        .logo img{
+            width: 70%;
+        }
+        /*navbarın paddingi ayarlıyorum*/
+        .navbar{
+            padding: 0 50px 0 14px; 
+        }
+        /*Home divi ile ilgil genel düzenlemeler*/ 
+        .home{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding:0 10px;
+            margin-top: 160px;
+        }
+        .home-top-h1{
+            width: 100%;
+        }
+        .home-top-h1 h1{
+            font-size: 34px;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+        }
+        .home p{
+            font-size: 15px;
+            padding: 4px 18px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .home-button{
+            padding: 2px 14px;
+        }
+        /*Home içerisindeki button ile ilgili düzenlemeler*/
+        .home-buttons{
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 10px;
+            gap: 4px;
+            font-weight: 800;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+        } 
+        .home-buttons .sign-up,
+        .home-buttons .details{
+            width: 100%;
+            padding: 6px 20px;
+            box-sizing: border-box;
+        }
+   
+}
