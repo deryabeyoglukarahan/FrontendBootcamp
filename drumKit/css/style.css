@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(187, 93, 143, 0.756) ,rgba(125, 33, 182, 0.756));
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-div h1{
+    font-size:5rem;
+    padding:2rem ;
+    margin-top:5rem;
+    color: #f4e9f3;
+    text-shadow: 1rem 1rem 2rem rgb(131, 3, 150);
+}
+.main-div p{
+    font-size:2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: #f4e9f3;
+    text-shadow: 1rem 1rem 2rem rgb(131, 3, 150);
+}
+.img-div {
+    width: 45vw;
+}
+.img-div img{
+    width: 100%;
+    object-fit: cover;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+    gap: 2rem;    
+}
+.div-button{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: #f4e9f3;
+    border-radius: 2rem;
+}
+
+.div-button:hover{
+    transform: scale(1.05);
+    transition: 0.3rem ease;
+    filter: drop-shadow(0 0 3rem rgb(239, 1, 164));
+
+}
+/* Farklı animasyonlar */
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.bounce {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+.shake {
+    animation: shake 0.3s ease;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.rotate {
+    animation: rotate 0.5s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); }
+}
+.flip {
+    animation: flip 0.4s ease;
+}
+
+@keyframes vibrate {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, 2px); }
+}
+.vibrate {
+    animation: vibrate 0.2s linear infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.flash {
+    animation: flash 0.2s ease-in-out;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.jump {
+    animation: jump 0.3s ease-in-out;
+}
+
