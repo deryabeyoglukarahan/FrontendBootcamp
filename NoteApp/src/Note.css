@@ -1,0 +1,99 @@
+.note-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+}
+.note-input{
+    background-color: #fff;
+    padding: 20px;
+    width: 60%;
+}
+.note-container h3{
+    color: #808080;
+    font-size: 24px;
+    font-weight: 600;
+}
+.note-container input{
+    width: 20%;
+    font-size: 20px;
+    color: #808080;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+.note-input textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+ 
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.note-container-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.add-button{
+    background-color: rgb(4, 192, 4);
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 18px;
+    display: inline-flex;
+}
+.buttons button{
+    border-radius: 50%;
+    width: 30px;  
+    height: 30px;
+    margin: 5px;  
+    border: none; 
+    cursor: pointer;
+}
+.button-pink{
+    background-color: rgb(219, 39, 99);
+}
+.button-purple{
+    background-color: rgb(122, 4, 122);
+}
+.button-yellow{
+    background-color: rgb(228, 199, 4);
+}
+.button-blue{
+    background-color: rgb(27, 95, 184);
+}
+.button-green{
+    background-color: rgb(27, 139, 76);
+}
+.list-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.list-buttons button{
+    padding: 10px 100px 10px 15px;
+    border-radius: 6px;
+}
+.note-list {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.note-item {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
